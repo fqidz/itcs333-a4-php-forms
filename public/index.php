@@ -54,10 +54,10 @@ if ($method === "POST") {
 <body>
   <h1>Contact Us</h1>
   <form method="post" action="index.php">
-    <label>Name <input type="text" name="name" <?php echo $errors ? "value='$name'" : ""; ?>></label>
+    <label>Name <input type="text" name="name" <?php echo $errors ? 'value="'.$name.'"' : ""; ?>></label>
     <?php echo isset($errors["name"]) ? "<span>".$errors["name"]."</span>" : ""; ?><br>
 
-    <label>Email <input type="email" name="email" <?php echo $errors ? "value='$email'" : ""; ?>></label>
+    <label>Email <input type="email" name="email" <?php echo $errors ? 'value="'.$email.'"' : ""; ?>></label>
     <?php echo isset($errors["email"]) ? "<span>".$errors["email"]."</span>" : ""; ?><br>
 
     <label>Message
